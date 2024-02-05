@@ -1,0 +1,1373 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.409), rgba(0, 0, 0, 0.38)),url("assests/photos/back.jpeg");   
+    background-position: bottom center;
+    background-size: max(1200px, 100vw);
+    height: 700px;  
+    width: 100vw;
+    background-repeat:repeat;
+    box-shadow:40px 40px 150px 200px rgba(0,0,0,0.45) inset,
+25px 25px 50px 20px rgba(0,0,0,0.45) inset;
+position: relative;
+}
+
+header #net{
+    width: 145px;
+    height: 145px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:-27px;
+}
+
+.navi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.5px;
+}
+
+.navi button{
+     margin-left: 10px;
+}
+
+.navigate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    width: 77vw;
+}
+
+@media screen and (min-width:294px) and (max-width:1279px) {
+    nav{
+        width: 95vw;
+        margin: 0vw;
+        justify-content: space-between;
+    }
+}
+
+nav .lang{
+    margin-top:35px;
+    margin-right: 10px;
+    width:120px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 0.1px solid rgba(255,255,255,0.33);
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+nav .lang select{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size:16px;
+    width: 76px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 6.5px;
+    appearance: none;   
+}
+
+nav .lang .arrow{
+     width: 8px;
+     height: 8px;
+     margin-left: 35.5px;
+     margin-top: 26.5px;
+}
+
+nav .lang select option{
+    color: black;
+}
+
+nav .lang img{
+    background-color: transparent;
+    height: 61px;
+    position: relative;
+    top:-16px;
+    width: 61px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(342deg) brightness(103%) contrast(102%);
+}
+nav button{
+    margin-top:32px;
+    margin-right: 10px;
+    width:75px;
+    border: none;
+    height: 33px;
+    border-radius: 3px;
+    background-color: rgb(229,9,20);
+    color: white;
+    font-size: 14.5px;
+    font-weight: bold;
+}
+
+.navi img{
+    width: 10px;
+    height: 10px;
+}
+
+.navi .lang .langsym{
+     right: 16px;
+}
+
+.para{
+    margin-top: 90px;
+    height: 600px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:-10px;
+}
+
+.para .regis{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.para .regis p{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    
+}
+
+.para .regis p:first-child{
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 45px;
+    font-weight:bolder;
+    letter-spacing: -1px;
+}
+
+.para .regis p:nth-child(2){
+    margin-bottom: 22px;
+    margin-top: -8px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.para .regis p:nth-child(3){
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+@media screen and (max-width:959px) {
+    header{
+        height: 510px;
+    }
+    header #net{
+        width: 89px;
+        height: 89px;
+        margin-top:29px;
+    }  
+    nav{
+        width: 90vw;
+    }
+    .navi{
+        margin-top: -4px;
+    }
+    .navi button{
+        margin-left: -2px;
+    }  
+     .para{
+        top:0px;
+        margin-top: 68px;
+        height: 440px;
+     }
+     .para .regis p:first-child{
+        font-size: 29px;
+        line-height: 1.4;
+     }
+     .para .regis p:nth-child(2){
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .para .regis p:nth-child(3){
+        font-size: 18px;
+    }
+}
+
+.para .regis .emailing{
+    margin-top: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.para .regis input{
+      background-color:rgba(255, 255, 255, 0.2);
+      height: 53px;
+      width: 50vw;
+      max-width: 360px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 0.25rem;
+      padding-left: 11px;
+      box-shadow: 5px 5px 45px 15px rgba(0, 0, 0, 0.6);
+      color: white;
+}
+
+.para .regis input::placeholder{
+    color: rgba(255, 255, 255, 0.847);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.para .regis button{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 24px;
+    font-weight: 550;
+    margin-left: 10.5px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    height: 55px;
+    width:180px;
+    border: none;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.para .regis img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(342deg) brightness(103%) contrast(102%);
+    margin: -2.5px;
+    margin-left: 5px;   
+}
+
+@media screen and (max-width:599px) {
+    header{
+        height: 460px;
+    }
+    nav .lang select{
+        display: none;
+    }
+    nav .lang{
+       width:60px;
+    }
+    nav .lang .arrow{
+        margin-left: -21px;
+    }
+    .para{
+        height: 380px;
+        margin-top: 80px;
+    }
+    .para .regis .emailing{
+        flex-direction: column;
+        row-gap: 15.5px;
+    }
+    .para .regis input{
+         width: 84vw;
+         max-width: 84vw;
+         height: 46px;
+    }
+    .para .regis p:first-child{
+        font-size: 29px;
+        line-height: 1.25;
+     }
+     .para .regis p:nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 10px;
+    }
+    .para .regis p:nth-child(3){
+        font-size: 18px;
+    }
+    .para .regis button{
+         height: 42px;
+         width: 169px;
+         font-size: 20px;
+         font-weight: 400;
+    }
+    .para .regis img{
+         width: 16px;
+         height: 16px;
+    }
+}
+
+main .line1{
+    background-color: rgba(35, 35, 35, 0.95);
+    width:100%;
+    height:0.6rem;
+}
+
+main .sect1,.sect2,.sect3,.sect4{
+   height: 560px;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.97);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+main .sect11,.sect22,.sect33,.sect44{
+    height: 70%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px;
+}
+
+main .sect11 .content1,.tv1{
+     width: 50%;
+     height: 80%;
+     max-width: 40%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:flex-start;
+}
+
+main .sect11 .tv1{
+    position: relative; 
+    overflow: hidden;
+}
+main .sect11 .content1 p:first-child{
+      color: white;
+      font-family: 'Martel Sans', sans-serif;
+      font-size: 45px;
+      font-weight:bold;
+      letter-spacing: -1.3px;
+}
+
+main .sect11 .content1 p:nth-child(2){
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+main .sect11 .tv1 .vid{
+       position: absolute;
+       align-self: center;
+       width: 80%;
+       height: 80%;
+       overflow: hidden;
+}
+
+main .sect11 .tv1 #tele1{
+    height: 62vh;
+    align-self:flex-start;
+    width: 36vw;
+    z-index: 10;
+}
+
+@media screen and (max-width:959px) {
+    main .sect1{
+       height: 600px;
+    }
+    main .sect11{
+       flex-direction: column;
+       height: 85%;
+       width: 100%;
+       margin:0px 113.68px;
+    }
+    main .sect11 .content1{
+        width: 100%;
+        max-width: 92%;
+        align-self: center;
+        height: 25%;
+    }
+    main .sect11 .tv1{
+        width:100%;
+        height: 75%;
+        min-width: 578.44px;
+    }
+    main .sect11 .content1 p:first-child{
+        font-size: 35.5px;
+        letter-spacing: -1px;
+        align-self: center;
+  }
+  
+  main .sect11 .content1 p:nth-child(2){
+    font-size: 21px;
+    align-self: center;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      max-width: 100%;
+  }
+  main .sect11 .tv1{
+    width:95%;
+    max-width: 80%;
+}
+  main .sect11 .tv1 .vid{
+    align-self: center;
+    width: 500px;
+    height: 75%;
+    overflow: hidden;
+}
+
+main .sect11 .tv1 #tele1{
+ height: 140%;
+ align-self:center;
+ overflow: hidden;
+ width: 100%;
+ z-index: 10;
+}
+}
+
+@media screen and (max-width:599px){
+    main .sect11{
+         height: 100%;
+    }
+
+    main .sect11 .content1{
+        position: relative;
+        top:30px;
+    }
+    main .sect11 .content1 p:first-child{
+        font-size: 33.3px;
+        letter-spacing: -1px;
+        align-self: center;
+  }
+  
+  main .sect11 .content1 p:nth-child(2){
+    font-size: 20px;
+  }
+  main .sect11 .tv1 .vid{
+    align-self: center;
+    width: 300px;
+    height: 60%;
+    overflow: hidden;
+}
+
+main .sect11 .tv1 #tele1{
+ height: 70%;
+ min-height: 50%;
+ align-self:center;
+ overflow: hidden;
+ width: 70%;
+ z-index: 10;
+}
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    main .sect11{
+         height: 83%;
+         column-gap: 130px;
+    }
+    main .sect11 .content1,.tv1{
+        width: 100%;
+    }
+
+    main .sect11 .content1 p:first-child{
+        line-height: 1.4;
+    }
+}
+
+main .sect22 .content2 p:first-child{
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 45px;
+    font-weight:bold;
+    letter-spacing: -1.3px;
+    line-height: 1.4;
+}
+
+main .sect22 .content2{
+    width: 38%;
+    height: 80%;
+    max-width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+main .sect22{
+    column-gap: 69px;
+}
+
+main .sect22 .content2 p:nth-child(2){
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+main .sect22 .enolapic{
+    width: 450px;
+    height: 380px;
+    min-width:340px;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .sect22 .enolapic #enola{
+    width: 59%;
+    height: 94%;
+}
+
+main .sect22 .enolapic .download{
+    width: 67%;
+    height: 26%;
+    border:2px solid rgba(255, 255, 255, 0.52);
+    background-color: black;
+    z-index: 100;
+    position: absolute;
+    top: 64%;
+    left: 16.5%;
+    border-radius: 0.9em;
+    display: flex;
+}
+
+main .sect22 .enolapic .download .stranger{
+     width: 67px;
+     height: 70px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+main .sect22 .enolapic .download .stranger img{
+    width: 60px;
+    height: 70px;
+}
+
+main .sect22 .enolapic .download p{
+    color: white;
+}
+
+main .sect22 .enolapic .download .stra{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+}
+
+main .sect22 .enolapic .download .stra p{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 19px;
+     font-weight:500;
+}
+
+main .sect22 .enolapic .download .stra p:nth-child(2){
+    color: rgb(0, 102, 255);
+    font-size: 16px;
+    font-weight:300;
+}
+
+main .sect22 .enolapic .download #do{
+    width: 25px;
+    height: 25px;
+    filter: invert(1);   
+}
+
+main .sect22 .enolapic .download .downloading{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    align-items: center;
+}
+
+@media screen and (max-width:959px) {
+    main .sect2{
+       height: 600px;
+    }
+    main .sect22{
+       flex-direction: column-reverse;
+       height: 85%;
+       width: 100%;
+       row-gap: 47px;
+       margin:0px 38px;
+    }
+    main .sect22 .content2{
+        width: 100%;
+        max-width: 100%;
+        align-self: center;
+        height: 25%;
+    }
+    main .sect22 .content2 p:first-child{
+        font-size: 35.5px;
+        text-align: center;
+        letter-spacing: -1px;
+        align-self: center;
+  }
+  
+  main .sect22 .content2 p:nth-child(2){
+    font-size: 21px;
+    align-self: center;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      max-width: 100%;
+  }
+ 
+}
+
+@media screen and (max-width:599px){
+    main .sect2{
+         height: 720px;
+    }
+    main .sect22{
+         height: 100%;
+         row-gap: 90px;
+    }
+
+    main .sect22 .content2{
+        position: relative;
+        top:30px;
+    }
+    main .sect22 .content2 p:first-child{
+        font-size: 33.3px;
+        letter-spacing: -1px;
+        align-self: center;
+  }
+  
+  main .sect22 .content2 p:nth-child(2){
+    font-size: 20px;
+  }
+  main .sect22 .enolapic .download{
+    width: 65%;
+    height: 19%;
+  }
+  main .sect22 .enolapic .download .stranger img{
+    width: 55px;
+    height: 51px;
+}
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    main .sect22{
+         height: 83%;
+         column-gap: 130px;
+    }
+    main .sect22 .content2{
+        width: 100%; 
+    }
+} 
+
+main .sect33{
+     column-gap: 50px;
+}
+
+main .sect33 .content3,.tv3{
+    width: 42%;
+    height: 100%;
+    max-width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+main .sect33 .tv3{
+   position: relative; 
+   overflow: hidden;
+}
+main .sect33 .content3 p:first-child{
+     color: white;
+     font-family: 'Martel Sans', sans-serif;
+     font-size: 45px;
+     font-weight:bold;
+     letter-spacing: -1.3px;
+}
+
+main .sect33 .content3 p:nth-child(2){
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+   font-size: 24px;
+}
+
+main .sect33 .tv3 .video3{
+    position: absolute;
+    align-self: center;
+    overflow: hidden;
+    width: 65%;
+    height:70%;
+    max-width: 60%;
+    max-height: 70%;
+    top:6%;
+    left:15%;
+}
+
+main .sect33 .tv3 .vid3{
+      position: absolute;
+      align-self: center;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
+}
+
+main .sect33 .tv3 #tele3{
+   height: 130%;
+   min-height: 130%;
+   align-self:flex-start;
+   position: relative;
+   top: 30px;
+   width: 93%;
+   z-index: 10;
+}
+
+@media screen and (max-width:959px) {
+    main .sect3{
+       height:600px;
+    }
+    main .sect33{
+       flex-direction: column;
+       height: 100%;
+       width: 100%;
+       margin:0px 35px;
+    }
+    main .sect33 .content3{
+        width: 100%;
+        max-width: 100%;
+        align-self: center;
+        height: 25%;
+    }
+    main .sect33 .content3 p:first-child{
+        font-size: 35.5px;
+        letter-spacing: -1px;
+        align-self: center;
+  }
+  
+  main .sect33 .content3 p:nth-child(2){
+      font-size: 21px;
+      align-self: center;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      max-width: 100%;
+  }
+  main .sect33 .tv3{
+    width:100%;
+    max-width: 100%;
+    height: 75%;
+}
+
+main .sect33 .tv3 .video3{
+    align-self: center;
+    width: 100%;
+    max-width: 65%;
+    height: 100%;
+    max-height: 80%;   
+    
+    overflow: hidden;
+    top:8%;
+    left: 14%;
+}
+  main .sect33 .tv3 .vid3{
+    width: 74%;
+    max-width: 100%;
+    min-width: 74%;
+    height: 75%;
+    max-height: 100%;
+    left: 19%;
+}
+
+main .sect33 .tv3 #tele3{
+    height: 100%;
+    min-height: 100%;
+    align-self:center;
+    overflow: hidden;
+    align-self:center;
+    position: relative;
+    top: -11px;
+    width: 75%;
+    min-width: 470px;
+ }
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    main .sect33{
+         height: 83%;
+         column-gap: 80px;
+    }
+
+    main .sect33 .tv3{
+       width:50%;
+       max-width: 50%;
+    }
+
+    main .sect33 .tv3 .video3{
+         width: 100%;
+         max-width: 100%;
+         height: 100%;
+         max-height: 100%;
+         top:5%;
+         left: 2%;
+    }
+
+    main .sect33 .tv3 #tele3{
+        width: 110%;
+    }
+    main .sect33 .tv3 .vid3{
+        width: 74%;
+        max-width: 70%;
+        height: 75%;
+        max-height: 75%;
+        left: 19%;
+    }
+} 
+
+@media screen and (max-width:599px){
+    main .sect3{
+        height: 650px;
+    }
+    main .sect33{
+         height: 100%;
+         row-gap: 10px;
+    }
+
+    main .sect33 .content3{
+        position: relative;
+        top:50px;
+        row-gap:5px;
+    }
+    main .sect33 .content3 p:first-child{
+        font-size: 33.3px;
+        letter-spacing: -1px;
+        line-height: 44px;
+        text-align: center;
+        align-self: center;
+  }
+  
+  main .sect33 .content3 p:nth-child(2){
+    font-size: 20px;
+  }
+  main .sect33 .tv3 .video3{
+    width: 91%;
+    height:60%;
+    max-width: 91%;
+    max-height: 60%;
+    top:20%;
+    left:-10px;
+}
+
+main .sect33 .tv3 .vid3{
+      position: absolute;
+      align-self: center;
+      overflow: hidden;
+      width: 40%;
+      height: 80%;
+      max-width: 40%;
+      max-height: 80%;
+}
+
+main .sect33 .tv3 #tele3{
+   height: 80%;
+   min-height: 80%;
+   position: relative;
+   top: 30px;
+   width: 110%;
+   min-width: 40%;
+   z-index: 10;
+}
+}
+
+main .sect44 .content4 p:first-child{
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 45px;
+    font-weight:bold;
+    letter-spacing: -1.3px;
+    line-height: 1.4;
+}
+
+main .sect44{
+    column-gap: 20px;
+    overflow: hidden;
+}
+
+main .sect44 .content4{
+    width: 38%;
+    height: 80%;
+    max-width: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+main .sect44 .content4 p:nth-child(2){
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+main .sect44 .children{
+    width: 42%;
+    height: 110%;
+    position: relative;
+    overflow: hidden;
+}
+
+main .sect44 .children img{
+    width: 100%;
+    height: 100%;
+     min-width: 65%;
+     min-height: 100%;
+}
+
+@media screen and (max-width:959px) {
+    main .sect4{
+       height: 600px;
+    }
+    main .sect44{
+       flex-direction: column-reverse;
+       height: 100%;
+       width: 100%;
+       row-gap: 10px;
+       margin:0px 38px;
+    }
+    main .sect44 .content4{
+        width: 100%;
+        max-width: 100%;
+        align-self: center;
+        text-align: center;
+        height: 44%;
+    }
+    main .sect44 .content4 p:first-child{
+        font-size: 35.5px;
+        text-align: center;
+        letter-spacing: -1px;
+        align-self: center;
+  }
+  
+  main .sect44 .content4 p:nth-child(2){
+      font-size: 21px;
+      align-self: center;
+      text-align: center;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      max-width: 100%;
+  }
+  main .sect44 .children{
+    width: 70%;
+    max-width: 100%;
+    min-width: 470.4px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+main .sect44 .children img{
+    width: 100%;
+    height: 100%;
+     min-width: 60%;
+     min-height: 92%;
+     max-width: 100%;
+     max-height: 100%;
+}
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    main .sect44{
+         height: 83%;
+         column-gap: 80px;
+    }
+    main .sect44 .children{
+         width: 50%;
+         min-width: 50%;
+    }
+} 
+
+@media screen and (max-width:599px){
+    main .sect4{
+        height: 720px;
+    }
+    main .sect44{
+         height: 100%;
+         row-gap: 20px;
+    }
+
+    main .sect44 .content4{
+        position: relative;
+        top:30px;
+        row-gap:5px;
+    }
+    main .sect44 .content4 p:first-child{
+        font-size: 33.3px;
+        letter-spacing: -1px;
+        line-height: 44px;
+        text-align: center;
+        align-self: center;
+  }
+  
+  main .sect44 .content4 p:nth-child(2){
+    font-size: 20px;
+  }
+  main .sect44 .children{
+    width: 500px;
+    max-width: 100%;
+    min-width: 250px;
+    height: 600px;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+main .sect44 .children img{
+    width: 100%;
+    height: 100%;
+     min-width: 20%;
+     min-height: 92%;
+     max-width: 100%;
+     max-height: 100%;
+}
+}
+
+.line1{
+    background-color: rgba(35, 35, 35, 0.95);
+    width:100%;
+    height:0.6rem;
+}
+
+section{
+    height: 958px;
+    padding: 72px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.97);
+}
+
+section .questions{
+   height: 100%;
+   width:  100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+section .questions .frequent{ 
+    color: white;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 45px;
+    font-weight:900;
+    letter-spacing: -1.3px;
+    margin: 10px;
+}
+
+section .questions .ques{
+    width: 77%;
+    height: 61.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    section .questions .ques{
+         width: 93%;
+    }
+} 
+
+section .questions .ques .que{
+       width: 100%;
+       height: 14.5%;
+       max-width: 1100px;
+       background-color: rgba(255, 255, 255, 0.15);
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       cursor: pointer;
+       transition: all 0.6s cubic-bezier(0.5, 0, 0.1, 1);
+}
+
+section .questions .ques .que:hover{
+      background-color: rgb(72, 72, 72);
+}
+
+section .questions .ques .que p{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 27.4px;
+    padding: 27px;
+}
+
+section .questions .ques .que p:last-child{
+    font-size: 57px;  
+    font-weight: 100;  
+} 
+
+.register{
+    width: 90%;
+    height: 65%;
+    text-align: center;
+    position: relative;
+    top: 2%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 95px;
+}
+.register p{
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    margin: 20px;
+}
+
+.register input{
+      background-color:rgba(255, 255, 255, 0.2);
+      height: 50px;
+      width: 50vw;
+      max-width: 360px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 0.25rem;
+      padding-left: 11px;
+      box-shadow: 5px 5px 45px 15px rgba(0, 0, 0, 0.6);
+      color: white;
+      margin: 6px;
+}
+
+.register input::placeholder{
+    color: rgba(255, 255, 255, 0.847);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.register button{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    font-size: 24px;
+    font-weight: 550;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    height: 54px;
+    width:180px;
+    border: none;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+.register img{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(342deg) brightness(103%) contrast(102%);
+    margin: -2.5px;
+    margin-left: 5px;   
+}
+
+@media screen and (max-width:959px) {
+    section{
+        padding: 45px 0px 0px;
+        height: 900px;
+    }
+    section .questions .frequent{
+         font-size: 31px;
+         margin-top: 58px;
+         height: 90px;
+         text-align: center;
+    }
+    section .questions .ques{
+        width: 89%;
+        justify-content:center;
+        row-gap: 10px;
+    }
+    section .questions .ques .que{
+         height: 12.5%;
+    }
+    section .questions .ques .que p{
+         font-size: 21px;
+    } 
+    section .questions .ques .que p:last-child{
+        font-size: 42.5px;
+    }
+    .register{
+        top:-20px;
+    }
+    .register p{
+        font-size: 19.5px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+    .register input{
+         width:68vw;
+         height: 42px;
+    }
+    .register button{
+        font-size: 19px;
+        font-weight: 400;
+        height: 44px;
+        width: 140px;
+        margin-top: 10px;
+    }
+    .register img{
+        width: 18px;
+        height: 20px;
+        margin-left: 5px;
+    }
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .foo{
+    margin: 22px 120px 80px 200px;
+    width: 100%;
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: rgba(255,255,255,0.7); 
+    row-gap: 30px;
+}
+
+footer .foo #num{
+    font-size: 1.05rem;
+}
+
+footer .foo .foot{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      row-gap: 18px;
+      column-gap: 140px;
+}
+
+@media screen and (max-width:959px){
+    footer{
+        height: 500px;
+    }
+    footer .foo{
+        height: 90%;
+        margin: 32px 0px;
+        padding: 0px 32px;
+        row-gap: 26px;
+    }
+    footer .foo .foot{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 13.7px;
+        column-gap: 25vw;
+    }
+}
+
+
+@media screen and (min-width:960px) and (max-width:1279px) {
+    footer .foo{
+         margin: 22px 0px 80px 9px;
+    }
+    footer .foo .foot{
+        column-gap: 160px;
+    }
+} 
+
+@media screen and (max-width:599px){
+    footer{
+        height: 540px;
+    }
+    footer .foo .foot li{
+        width: 100%;
+    }
+}
+
+footer .foo .foot li{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.743);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.48);
+    text-decoration-thickness:0.072em;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.langu{
+    margin-right: 10px;
+    width:120px;
+    height: 30px;
+    min-width: 120px;
+    min-height: 30px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 3px;
+    border: 0.1px solid rgba(255,255,255,0.33);
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.langu select{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size:16px;
+    width: 76px;
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 6.5px;
+    appearance: none;   
+}
+
+.langu .arrow{
+     width: 8px;
+     height: 8px;
+     margin-left: 35.5px;
+     margin-top: 26.5px;
+}
+
+.langu select option{
+    color: black;
+}
+
+.langu img{
+    background-color: transparent;
+    height: 61px;   
+    position: relative;
+    top:-16px;
+    width: 61px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(342deg) brightness(103%) contrast(102%);
+}
+
+.langu .langsymb{
+   right: 10px;
+}
+
+footer .foo #lastnet{
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     color: rgba(255, 255, 255, 0.743);
+     font-size: 14.5px;
+}
